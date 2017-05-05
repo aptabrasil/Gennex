@@ -3,12 +3,14 @@ require 'environment.php';
 global $config;
 $config=array();
 if (ENVIRONMENT=='development') {
-   $config['dbname'] = 'prime';
+   $config['dbmaster'] = 'master';
+   $config['dbname'] = 'gennex';
    $config['host']   = 'localhost';
    $config['dbuser'] = 'root';
    $config['dbpass'] = '';
 } else {
-   $config['dbname'] = 'apta';
+   $config['dbmaster'] = 'master';
+   $config['dbname'] = 'gennex';
    $config['host']   = 'localhost';
    $config['dbuser'] = 'root';
    $config['dbpass'] = '';
